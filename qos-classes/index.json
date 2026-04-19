@@ -1,0 +1,21 @@
+{
+  "title": "Kubernetes QoS Classes",
+  "description": "Learn how Kubernetes assigns Guaranteed, Burstable and BestEffort QoS classes to Pods.",
+  "details": {
+    "intro": {
+      "text": "step1.md"
+    },
+    "finish": {
+      "text": "finished.md"
+    },
+    "assets": {
+      "host01": [
+        { "file": "setup.sh", "target": "/root/setup.sh" },
+        { "file": "verify.sh", "target": "/root/verify.sh" }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
