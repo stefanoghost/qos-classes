@@ -1,9 +1,3 @@
-
----
-
-# 4) `foreground.sh`
-
-```bash
 #!/bin/bash
 set -e
 
