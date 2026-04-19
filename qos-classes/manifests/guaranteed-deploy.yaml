@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guaranteed-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guaranteed-app
+  template:
+    metadata:
+      labels:
+        app: guaranteed-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "128Mi"
