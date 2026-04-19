@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: burstable-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: burstable-app
+  template:
+    metadata:
+      labels:
+        app: burstable-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"
