@@ -1,7 +1,9 @@
 #!/bin/bash
 set -e
+
 mkdir -p /root/scenario/manifests
 cd /root/scenario
+
 cat > manifests/guaranteed-deploy.yaml <<'EOM'
 apiVersion: apps/v1
 kind: Deployment
@@ -113,7 +115,4 @@ else
 fi
 EOM
 
-chmod +x verify.sh
-
-echo "Scenario pronto."
-echo "Vai in /root/scenario e applica i manifest."
+chmod +x /root/scenario/verify.sh
