@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: besteffort-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: besteffort-app
+  template:
+    metadata:
+      labels:
+        app: besteffort-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
