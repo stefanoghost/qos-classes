@@ -6,9 +6,15 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "background": "background.sh",
-      "foreground": "foreground.sh"
+      "background": "background.sh"
     },
+    "steps": [
+      {
+        "title": "Deploy e verifica QoS",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
     "finish": {
       "text": "finish.md"
     }
