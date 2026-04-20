@@ -24,4 +24,9 @@ Completa le seguenti operazioni:
 helm search repo minio/operator
 helm repo add minio-operator  http://localhost:6000
 helm -n minio install minio-operator minio-operator/operator
+helm -n minio ls
+kubectl -n minio get pod
+kubectl get crd
 kubectl describe crd tenants.minio.min.io
+vim /opt/course/2/minio-tenant.yaml
+
