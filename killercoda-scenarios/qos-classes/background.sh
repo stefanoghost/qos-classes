@@ -116,3 +116,7 @@ fi
 EOM
 
 chmod +x /root/scenario/verify.sh
+#!/bin/bash
+while [ ! -f /root/scenario/verify.sh ]; do
+  sleep 1
+done
