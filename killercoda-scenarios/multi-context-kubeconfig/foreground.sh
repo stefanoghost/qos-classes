@@ -1,6 +1,3 @@
-
-## `foreground.sh`
-
 #!/bin/bash
 while [ ! -f /root/.kube/multi-config ]; do
   sleep 1
