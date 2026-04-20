@@ -15,9 +15,16 @@ Imparerai a:
 Il kubeconfig da usare è:
 
 ```bash
-export KUBECONFIG=/root/.kube/multi-config
 
-kubectl config get-contexts
+kubectl --kubeconfig /root/.kube/multi-config config get-contexts
+export KUBECONFIG=/root/.kube/multi-config
+kubectl config get-contexts -o name > contextname.txt
+kubectl --kubeconfig /opt/course/1/kubeconfig config view -o yaml
+kubectl --kubeconfig /opt/course/1/kubeconfig config view -o jsonpath="{.contexts[*].name}"
 kubectl config current-context
 kubectl config view
 kubectl config view --minify
+kubectl --kubeconfig /root/.kube/multi-config config view -o yaml --raw
+echo LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN2RE... | base64 -d > /opt/course/1/cert
+kubectl --kubeconfig  /root/.kube/multi-config config view --raw -ojsonpath="{.users[0].user.client-certificate-data}" | base64 -d > 
+
