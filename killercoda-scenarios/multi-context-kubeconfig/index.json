@@ -1,0 +1,24 @@
+{
+  "title": "Kubeconfig Multi-Context and Certificate Extraction",
+  "description": "Lavora con più context nel kubeconfig ed estrai il certificato client di un utente in un file decodificato",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+      {
+        "title": "Inspect contexts and extract the user certificate",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
