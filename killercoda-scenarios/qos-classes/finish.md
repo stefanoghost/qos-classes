@@ -31,3 +31,5 @@ Sotto pressione memoria/CPU sul nodo:
 ```bash
 kubectl get pods
 kubectl describe pod <pod-name> | grep -i "QoS Class"
+kubectl get pod -o jsonpath="{ range .items[*] }{ .metadata.name}{'  ==>  '}{ .spec.containers[*].resources }{'   ==>   '}{ .status.qosClass }{'\n'}{end}"
+
