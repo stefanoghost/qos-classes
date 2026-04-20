@@ -16,3 +16,8 @@ Il kubeconfig da usare è:
 
 ```bash
 export KUBECONFIG=/root/.kube/multi-config
+
+kubectl config get-contexts
+kubectl config current-context
+kubectl config view
+kubectl config view --minify
