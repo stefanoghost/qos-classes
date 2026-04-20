@@ -22,4 +22,5 @@ Completa le seguenti operazioni:
 
 ```bash
 helm search repo minio/operator
+helm repo add minio-operator  http://localhost:6000
 kubectl describe crd tenants.minio.min.io
