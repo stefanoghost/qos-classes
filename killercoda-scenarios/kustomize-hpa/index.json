@@ -1,0 +1,25 @@
+{
+  "title": "Kustomize HPA Autoscaler",
+  "description": "Configura HPA usando Kustomize per staging e prod",
+  "difficulty": "advanced",
+  "time": "20 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Configure HPA with Kustomize",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
