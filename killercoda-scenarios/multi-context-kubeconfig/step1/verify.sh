@@ -1,12 +1,6 @@
 
-## `step1/verify.sh`
-
-Killercoda esegue lo script di verify quando l’utente preme Check nello step, e considera riuscito lo step se lo script esce con `0`. Gli esempi ufficiali usano proprio `verify.sh` dentro gli step. :contentReference[oaicite:4]{index=4}
-
-```bash
 #!/bin/bash
 set -e
-
 export KUBECONFIG=/root/.kube/multi-config
 
 test -f /root/solution/developer.crt
