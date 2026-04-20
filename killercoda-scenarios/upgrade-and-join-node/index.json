@@ -1,0 +1,32 @@
+{
+  "title": "Kubernetes Upgrade and Join Node",
+  "description": "Upgrade a worker node and join it to the cluster",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Upgrade and Join Node",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "assets": {
+    "host01": [
+      {"file": "background.sh", "target": "/root/background.sh"}
+    ]
+  }
+}
