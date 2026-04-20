@@ -25,6 +25,7 @@ Completa le seguenti operazioni:
 ```bash
 helm search repo minio/operator
 helm repo add minio-operator  http://localhost:6000
+helm search repo minio-operator
 helm -n minio install minio-operator minio-operator/operator
 helm -n minio ls
 kubectl -n minio get pod
