@@ -23,4 +23,5 @@ Completa le seguenti operazioni:
 ```bash
 helm search repo minio/operator
 helm repo add minio-operator  http://localhost:6000
+helm -n minio install minio-operator minio/operator
 kubectl describe crd tenants.minio.min.io
