@@ -3,9 +3,11 @@
 Completa le seguenti operazioni:
 
 1. Crea il namespace `minio`
-2. Installa Helm chart `minio/operator` nel namespace minio
+2. aggiungi il repo gia configurato sul localhost http://localhost:6000 con nome minio-operator
+   
+3. Installa Helm chart `minio/operator` nel namespace minio
    - nome release: `minio-operator`
-3. Modifica il file:
+4. Modifica il file:
    /opt/course/2/minio-tenant.yaml
 
    Aggiungi:
@@ -16,7 +18,7 @@ Completa le seguenti operazioni:
 
    spec.features
 
-4. Applica il file YAML
+5. Applica il file YAML
 
 ## Comandi utili
 
