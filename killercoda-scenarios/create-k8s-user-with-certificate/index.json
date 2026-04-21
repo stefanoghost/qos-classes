@@ -2,7 +2,7 @@
   "title": "Create Kubernetes User with Client Certificate",
   "description": "Create a Kubernetes user from scratch using private key, CSR, signed certificate, kubeconfig and RBAC",
   "difficulty": "intermediate",
-  "time": "20 minutes",
+  "time": "30 minutes",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -15,6 +15,11 @@
         "title": "Create user stefano with client certificate",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Restrict stefano with Role and RoleBinding",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ]
   },
