@@ -51,14 +51,17 @@ Se non funziona:
 
 
 http://localhost:8080
-
-
 ---
-
 ## Comandi utili
 docker ps
+
 docker logs web
+
 docker stop web
+
 docker rm web
+
+docker build -t nginx-custom .
+
 docker run -d  --name web  -p 8080:8080 web-image
 
