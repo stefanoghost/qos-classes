@@ -42,6 +42,33 @@ Validate permissions
 kubectl auth can-i list pods --as=stefano -n project-dev
 kubectl auth can-i list pods --as=stefano -n default
 kubectl auth can-i create pods --as=stefano -n project-dev
+
+Version in yaml manifest:
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: stefano-dev-reader
+  namespace: project-dev
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: stefano-dev-rb
+  namespace: project-dev
+subjects:
+- kind: User
+  name: stefano
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: stefano-dev-reader
+  apiGroup: rbac.authorization.k8s.io
+
 Notes
 Work on the control-plane node
 The goal of this step is to replace cluster-wide read access with namespace-scoped access
