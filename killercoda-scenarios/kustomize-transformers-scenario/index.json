@@ -1,0 +1,28 @@
+{
+  "title": "Fix the Broken Kustomize Overlays",
+  "description": "Practice Kustomize transformers by fixing staging and production overlays for a Kubernetes application.",
+  "details": {
+    "intro": {
+      "text": "steps/step1.md",
+      "foreground": "assets/setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Fix the staging overlay",
+        "text": "steps/step1.md",
+        "verify": "assets/step1-verify.sh"
+      },
+      {
+        "title": "Build the production overlay",
+        "text": "steps/step2.md",
+        "verify": "assets/step2-verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "steps/step2.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
