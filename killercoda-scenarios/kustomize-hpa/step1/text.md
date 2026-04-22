@@ -33,3 +33,19 @@ kubectl kustomize prod | kubectl apply -f -
 
 kubectl kustomize staging
 kubectl kustomize prod
+
+## ricordati di creare i namespace nei vari overlays
+
+cat staging/kustomization.yaml 
+resources:
+- ../base
+- namespace.yaml
+patches:
+- path: patch.yaml
+namespace: api-gateway-staging
+
+cat staging/namespace.yaml 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: api-gateway-staging
