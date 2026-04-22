@@ -13,13 +13,13 @@ This environment will run in the same cluster, so resource names must not collid
 
 ## Task
 
-Update the `prod` overlay so that:
+Update the 'prod' overlay so that:
 
-1. all resources are deployed in the namespace `api-gateway-prod`
-2. all resource names use the prefix `prod-`
-3. all production resources include the label `env=prod`
-4. all production resources include the annotation `owner=team-platform`
-5. the container image is changed from `nginx` to `nginx:1.25`
+1. all resources are deployed in the namespace 'api-gateway-prod'
+2. all resource names use the prefix 'prod-'
+3. all production resources include the label 'env=prod'
+4. all production resources include the annotation 'owner=team-platform'
+5. the container image is changed from 'nginx' to 'nginx:1.25'
 6. the production overlay can be successfully applied
 7. the Service has valid endpoints
 
