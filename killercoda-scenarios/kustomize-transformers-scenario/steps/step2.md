@@ -5,9 +5,12 @@
 
 The staging environment is now fixed.
 
-Your next task is to prepare the **production** overlay.
+Your next task is to prepare
+the **production** overlay.
 
-This environment will run in the same cluster, so resource names must not collide with staging.
+This environment will run in the same
+cluster, so resource names must not
+collide with staging.
 
 ---
 
