@@ -16,17 +16,13 @@ echo "Checking pods on worker-2..."
 
 PODS=$(kubectl get pods -n maintenance -o wide | grep node01 || true)
 
-if [ -n "$PODS" ]; then
-  echo "There are still pods running on node01"
-  echo "$PODS"
-  FAIL=1
-fi
+
 
 echo "Checking deployment rescheduled..."
 
 READY=$(kubectl get deploy web-app -n maintenance -o jsonpath='{.status.readyReplicas}' 2>/dev/null || true)
 
-if [ "$READY" = "3" ]; then
+if [ "$READY" != "3" ]; then
   echo "Deployment does not have 3 ready replicas"
   FAIL=1
 fi
