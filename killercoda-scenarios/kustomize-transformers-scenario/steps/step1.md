@@ -41,13 +41,17 @@ Task
 
 Fix the staging overlay so that:
 
-the namespace api-gateway-staging exists
-all resources are deployed into that namespace
-all staging resources include the label env=staging
+the namespace api-gateway-staging
+ exists
+all resources are deployed into
+that namespace
+all staging resources include
+the label env=staging
 the application runs successfully
 the Service still matches the Pods
 
-Do not change the base unless absolutely necessary.
+Do not change the base unless absolutely
+necessary.
 
 Useful commands
 kubectl kustomize staging
