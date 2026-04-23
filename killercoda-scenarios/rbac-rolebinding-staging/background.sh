@@ -10,8 +10,9 @@ for i in {1..60}; do
   sleep 2
 done
 
-kubectl delete role list-resources -n staging --ignore-not-found=true >/dev/null 2>&1 || true
-kubectl delete rolebinding dev-user-binding -n staging --ignore-not-found=true >/dev/null 2>&1 || true
+kubectl delete rolebinding dev-sa-binding -n staging --ignore-not-found=true >/dev/null 2>&1 || true
+kubectl delete role list-resources-sa -n staging --ignore-not-found=true >/dev/null 2>&1 || true
+kubectl delete serviceaccount dev-sa -n staging --ignore-not-found=true >/dev/null 2>&1 || true
 kubectl delete namespace staging --ignore-not-found=true >/dev/null 2>&1 || true
 kubectl delete namespace production --ignore-not-found=true >/dev/null 2>&1 || true
 
