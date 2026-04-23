@@ -1,8 +1,8 @@
 {
-  "title": "RBAC and RoleBinding in Staging",
-  "description": "Grant a user permission to list Pods and Deployments only in the staging namespace",
-  "difficulty": "beginner",
-  "time": "7 minutes",
+  "title": "RBAC: User and ServiceAccount Permissions",
+  "description": "Configure RBAC for a user and a ServiceAccount with namespace-scoped access",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -13,9 +13,14 @@
     },
     "steps": [
       {
-        "title": "Grant dev-user access in staging",
+        "title": "Step 1: Grant dev-user access in staging",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Step 2: Grant ServiceAccount access in staging",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ]
   },
