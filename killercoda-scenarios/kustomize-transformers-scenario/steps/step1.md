@@ -18,7 +18,7 @@ Move to the working directory:
 
 ```bash
 cd /opt/course/6/api-gateway
-tree
+find --
 ou should find:
 
 .
