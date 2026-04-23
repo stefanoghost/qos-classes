@@ -5,7 +5,7 @@ FAIL=0
 
 echo "Checking node cordon..."
 
-SCHED=$(kubectl get node worker-2 -o jsonpath='{.spec.unschedulable}' 2>/dev/null || true)
+SCHED=$(kubectl get node node01 -o jsonpath='{.spec.unschedulable}' 2>/dev/null || true)
 
 if [ "$SCHED" != "true" ]; then
   echo "Node is not cordoned"
@@ -14,10 +14,10 @@ fi
 
 echo "Checking pods on worker-2..."
 
-PODS=$(kubectl get pods -n maintenance -o wide | grep worker-2 || true)
+PODS=$(kubectl get pods -n maintenance -o wide | grep node01 || true)
 
 if [ -n "$PODS" ]; then
-  echo "There are still pods running on worker-2"
+  echo "There are still pods running on node01"
   echo "$PODS"
   FAIL=1
 fi
