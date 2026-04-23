@@ -45,7 +45,7 @@ metadata:
   namespace: maintenance
 spec:
   nodeSelector:
-    kubernetes.io/hostname: worker-2
+    kubernetes.io/hostname: node01
   containers:
   - name: db
     image: busybox
