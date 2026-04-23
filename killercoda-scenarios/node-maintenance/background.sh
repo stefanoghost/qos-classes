@@ -58,5 +58,7 @@ spec:
     emptyDir: {}
 EOF
 
+kubectl taint node controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+
 echo "Scenario ready"
 kubectl get pods -n maintenance -o wide
