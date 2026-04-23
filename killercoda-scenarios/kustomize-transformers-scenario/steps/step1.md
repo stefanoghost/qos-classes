@@ -4,7 +4,8 @@
 
 You are working as a platform engineer.
 
-An application called `api-gateway` must be deployed in multiple environments using **Kustomize overlays**.
+An application called `api-gateway` 
+must be deployed in multiple environments using **Kustomize overlays**.
 
 The base manifests already exist, but the overlays are not fully working yet.
 
@@ -31,11 +32,15 @@ ou should find:
 └── staging
     └── kustomization.yaml
 
-The base folder contains reusable manifests.
+The base folder contains reusable
+manifests.
 
-The staging overlay already includes some Kustomize configuration, but deployment currently fails.
+The staging overlay already includes
+ some Kustomize configuration, but
+deployment currently fails.
 
-You should prefer Kustomize transformers where possible.
+You should prefer Kustomize
+transformers where possible.
 
 Task
 
