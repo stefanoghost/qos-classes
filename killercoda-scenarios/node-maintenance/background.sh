@@ -43,6 +43,8 @@ kind: Pod
 metadata:
   name: database
   namespace: maintenance
+  labels:
+    app: database
 spec:
   nodeSelector:
     kubernetes.io/hostname: node01
