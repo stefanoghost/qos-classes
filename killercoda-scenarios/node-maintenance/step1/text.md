@@ -1,6 +1,6 @@
 # Question 3: Node Maintenance
 
-Node **worker-2** needs maintenance and will be offline for 1 hour.
+Node **node01** needs maintenance and will be offline for 1 hour.
 
 Currently:
 
@@ -28,13 +28,13 @@ Currently:
 ## Useful commands
 
 ```bash
-kubectl cordon worker-2
+kubectl cordon node01
 
 kubectl drain node01   --ignore-daemonsets   --pod-selector='app!=database'
 
-kubectl drain worker-2 \
+kubectl drain node01 \
   --ignore-daemonsets \
-  --delete-emptydir-data
+  --delete-emptydir-data  #se lo lancu distrugge il pod database
 Notes
 cordon prevents scheduling
 drain evicts pods
