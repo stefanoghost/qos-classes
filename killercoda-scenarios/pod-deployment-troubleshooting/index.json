@@ -1,0 +1,35 @@
+{
+  "title": "Pod Deployment Troubleshooting",
+  "description": "Fix a crashing pod by creating and mounting a ConfigMap file",
+  "difficulty": "beginner",
+  "time": "8 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Fix app-frontend in production",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "background.sh",
+        "target": "/root/background.sh"
+      }
+    ]
+  }
+}
