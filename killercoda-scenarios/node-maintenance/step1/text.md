@@ -30,7 +30,7 @@ Currently:
 ```bash
 kubectl cordon node01
 
-kubectl drain node01   --ignore-daemonsets   --pod-selector='app!=database'
+kubectl drain node01 --ignore-daemonsets  --pod-selector="app!=database"  --delete-emptydir-data=false
 
 kubectl drain node01 \
   --ignore-daemonsets \
