@@ -5,8 +5,7 @@
   "time": "8 minutes",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "background": "background.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
@@ -24,6 +23,9 @@
   },
   "environment": {
     "uilayout": "terminal"
+  },
+  "scripts": {
+    "background": "background.sh"
   },
   "assets": {
     "host01": [
