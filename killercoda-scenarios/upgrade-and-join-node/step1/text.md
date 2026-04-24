@@ -19,7 +19,11 @@ A node called **node01** is not part of the cluster and is running an older Kube
 - sudo apt-cache madison kubeadm
 - sudo apt-get update && sudo apt-get install -y kubeadm='1.35.1-1.1' kubectl='1
 .35.1-1.1' kubelet='1.35.1-1.1'
-  sudo apt-mark hold kubeadm
+sudo apt-mark hold kubeadm
+
+sudo kubeadm token create  --print-join-command  
+
+sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-change-held-packages 
   
   kubeadm version
   sudo kubeadm upgrade plan
