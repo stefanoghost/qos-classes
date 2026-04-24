@@ -30,3 +30,8 @@ Hint
 Look at:
 
 kubectl get svc web-clusterip -n services -o yaml
+
+kubectl get svc web-clusterip
+kubectl get endpoints web-clusterip
+kubectl label pod <pod> app=wrong -n services
+kubectl get endpoints
