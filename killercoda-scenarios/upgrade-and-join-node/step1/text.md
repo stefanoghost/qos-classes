@@ -36,6 +36,9 @@ sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-chang
    
    kubeadm join 172.30.1.2:6443 --token lqmmkz.rlmo51wy5qqqypj7 --discovery-token-ca-cert-hash sha256:7976ccc24f182dff3daa92b705003b8a135e97e20f03baf0a17757076f5b8389  
 
+   da controlplane
+   scp /etc/kubernetes/admin.conf root@node01:/root/.kube/config
+
 
    sudo apt-get install -y kubelet='1.35.4-1.1'  kubectl='1.35.4-1.1'   --allow-change-held-packages 
    sudo apt-get install -y kubeadm='1.35.4-1.1'   --allow-change-held-packages
