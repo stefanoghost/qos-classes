@@ -20,3 +20,13 @@ Install the nginx chart from Bitnami.
 helm install nginx-test bitnami/nginx \
   --version <VERSION> \
   -n helm-search
+
+
+Verify
+helm list -n helm-search
+kubectl get pods -n helm-search
+Hint
+
+Use:
+
+helm search repo bitnami/nginx --versions
