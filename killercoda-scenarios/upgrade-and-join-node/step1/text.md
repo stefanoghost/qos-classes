@@ -28,5 +28,6 @@ sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-chang
   kubeadm version
    sudo apt-get update && sudo apt-get install -y kubeadm='1.35.4-1.1'
   sudo kubeadm upgrade plan
+   kubeadm upgrade apply v1.35.4 
 
   
