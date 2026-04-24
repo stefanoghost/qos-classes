@@ -1,0 +1,33 @@
+{
+  "title": "Helm Search and Versions",
+  "description": "Learn how to search Helm charts and select specific versions",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1: Search Helm charts",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Step 2: Install specific version",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
