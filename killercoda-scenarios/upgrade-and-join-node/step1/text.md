@@ -13,3 +13,15 @@ A node called **node01** is not part of the cluster and is running an older Kube
   ssh node01
 
 - Ensure the node becomes Ready
+
+- comandi utili
+- apt list --installed|grep -i kube
+- sudo apt-cache madison kubeadm
+- sudo apt-get update && sudo apt-get install -y kubeadm='1.35.1-1.1' kubectl='1
+.35.1-1.1' kubelet='1.35.1-1.1'
+  sudo apt-mark hold kubeadm
+  
+  kubeadm version
+  sudo kubeadm upgrade plan
+
+  
