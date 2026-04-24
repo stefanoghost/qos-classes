@@ -24,3 +24,6 @@ kubectl expose deployment web \
   --target-port=80 \
   --name=web-nodeport \
   -n services
+Check:
+
+kubectl get svc -n services
