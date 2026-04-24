@@ -1,0 +1,28 @@
+{
+  "title": "Helm Broken Deployment (Debug)",
+  "description": "Debug a broken Helm deployment and fix incorrect values",
+  "difficulty": "intermediate",
+  "time": "10 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Fix the broken Helm deployment",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
