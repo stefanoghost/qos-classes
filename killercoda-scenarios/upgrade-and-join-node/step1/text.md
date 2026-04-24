@@ -43,6 +43,51 @@ sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-chang
    sudo apt-get install -y kubelet='1.35.4-1.1'  kubectl='1.35.4-1.1'   --allow-change-held-packages 
    sudo apt-get install -y kubeadm='1.35.4-1.1'   --allow-change-held-packages
 
+
+   kubeadm upgrade apply <versione>
+
+👉 Questo è il comando principale
+
+🟢 Worker Node
+
+Sul worker (o anche control plane DOPO apply):
+
+kubeadm upgrade node
+
+👉 Ma solo dopo aver aggiornato i pacchetti
+
+🧠 Procedura corretta (importantissima per CKA)
+1. Sul control plane
+kubeadm upgrade plan
+kubeadm upgrade apply v1.X.X
+
+Poi:
+
+apt-get install -y kubelet=VERSION kubectl=VERSION
+systemctl restart kubelet
+2. Su ogni nodo (worker o control plane secondari)
+kubectl drain <node> --ignore-daemonsets
+
+Poi sul nodo:
+
+apt-get install -y kubelet=VERSION kubeadm=VERSION
+kubeadm upgrade node
+systemctl restart kubelet
+
+Infine:
+
+kubectl uncordon <node>
+❗ Errore tipico
+
+Molti pensano:
+
+kubeadm upgrade node
+
+👉 faccia tutto → ❌ NO
+
+Se non aggiorni i pacchetti (kubelet, kubeadm)
+→ rischi mismatch di versioni → cluster instabile
+
    
 
    
