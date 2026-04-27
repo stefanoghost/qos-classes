@@ -18,3 +18,6 @@ Use:
 podSelector:
   matchLabels:
     app: frontend
+
+Verify
+kubectl exec -n netpol client -- nc -z -w 2 frontend 80
