@@ -1,0 +1,33 @@
+{
+  "title": "NetworkPolicy Default Deny",
+  "description": "Understand podSelector {} and default deny behavior",
+  "difficulty": "intermediate",
+  "time": "12 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1: Apply default deny policy",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Step 2: Allow traffic to frontend",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
