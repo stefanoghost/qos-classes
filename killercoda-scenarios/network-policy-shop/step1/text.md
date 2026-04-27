@@ -27,6 +27,10 @@ kubectl get pods -n shop --show-labels
 Check services:
 
 kubectl get svc -n shop
+network-policy name
+frontend-policy
+backend-policy
+databases-policy
 
 Test connectivity:
 
