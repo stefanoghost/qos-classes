@@ -1,0 +1,28 @@
+{
+  "title": "Storage: PV, PVC and Pod Volume",
+  "description": "Create a PersistentVolume, bind it to a PVC, and mount it inside a Deployment",
+  "difficulty": "intermediate",
+  "time": "12 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Create PV, PVC and Deployment volume mount",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  },
+  "environment": {
+    "uilayout": "terminal"
+  }
+}
