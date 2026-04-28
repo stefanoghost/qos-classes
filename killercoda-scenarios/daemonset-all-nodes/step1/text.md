@@ -42,3 +42,6 @@ Verify
 kubectl get ds -n project-tiger
 kubectl get pods -n project-tiger -l id=ds-important -o wide
 kubectl describe ds ds-important -n project-tiger
+
+
+Nota: se il cluster usa ancora la vecchia taint node-role.kubernetes.io/master:NoSchedule, aggiungi anche questa toleration nel manifest.
