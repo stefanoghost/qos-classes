@@ -1,1 +1,25 @@
-
+{
+  "title": "CKA Practice: Check Kubernetes Certificate Expiration",
+  "description": "Check the kube-apiserver certificate expiration date and identify the kubeadm renewal command.",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Check kube-apiserver certificate validity",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
