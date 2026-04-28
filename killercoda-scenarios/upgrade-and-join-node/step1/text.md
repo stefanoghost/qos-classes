@@ -28,6 +28,7 @@ sudo apt-mark hold kubeadm
 sudo kubeadm token create  --print-join-command  
 
 sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-change-held-packages 
+apt show kubectl -a | grep 1.35
 
 kubeadm upgrade node   #generalmente sudo apt-get install -y kubeadm='1.35.1-1.1'   e poi upgrade
 
