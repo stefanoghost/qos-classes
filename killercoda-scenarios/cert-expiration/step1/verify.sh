@@ -72,4 +72,4 @@ case "$normalized" in
     ;;
 esac
 
-echo "🎉 Scenario completed successfully"
+echo "Scenario completed successfully"
