@@ -85,3 +85,12 @@ kubectl get pv
 kubectl get pvc -n project-t230
 kubectl get deploy,pod -n project-t230
 kubectl describe pod -n project-t230 -l app=safari
+
+
+
+
+Nota importante: se nel cluster c’è una default StorageClass, il PVC potrebbe ricevere automaticamente storageClassName. In questo scenario il verify richiede che non sia definita; se il cluster la imposta comunque, usa esplicitamente:
+
+
+storageClassName: ""
+sia nel PV che nel PVC.
