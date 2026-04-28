@@ -57,3 +57,11 @@ kubectl apply -f ingress.yaml
 Verify
 kubectl get ingress -n ingress-lab
 kubectl describe ingress api-ingress -n ingress-lab
+
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+
+
+ kubectl get ingressclass
+
+ingressClassName: nginx  ==> nello yaml .spec.ingressClassName
