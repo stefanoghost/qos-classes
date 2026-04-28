@@ -6,12 +6,12 @@ RENEW_FILE="/opt/course/14/kubeadm-renew-certs.sh"
 CERT_FILE="/etc/kubernetes/pki/apiserver.crt"
 
 fail() {
-  echo "❌ $1"
+  echo " $1"
   exit 1
 }
 
 pass() {
-  echo "✅ $1"
+  echo " $1"
 }
 
 [ -f "$CERT_FILE" ] || fail "Certificate file $CERT_FILE does not exist"
