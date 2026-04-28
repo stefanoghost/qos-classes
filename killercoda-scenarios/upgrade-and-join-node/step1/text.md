@@ -29,7 +29,7 @@ sudo kubeadm token create  --print-join-command
 
 sudo apt-get install -y kubeadm='1.35.1-1.1'  kubelet='1.35.1-1.1' --allow-change-held-packages 
 
-kubeadm upgrade node
+kubeadm upgrade node   #generalmente sudo apt-get install -y kubeadm='1.35.1-1.1'   e poi upgrade
 
 sul control plane
 sudo kubeadm token create --print-join-command
