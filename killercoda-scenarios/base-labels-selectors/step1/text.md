@@ -33,3 +33,17 @@ Useful commands:
 kubectl get pod frontend-pod -n app-space --show-labels
 kubectl describe svc frontend-service -n app-space
 kubectl get endpoints frontend-service -n app-space
+
+
+Comandi tipici per risolverlo:
+
+kubectl label pod frontend-pod -n app-space environment=production
+
+kubectl patch service frontend-service -n app-space -p '{
+  "spec": {
+    "selector": {
+      "app": "frontend",
+      "tier": "web"
+    }
+  }
+}'
