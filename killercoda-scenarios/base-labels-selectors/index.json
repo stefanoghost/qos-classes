@@ -1,5 +1,5 @@
 {
-  "title": "CKA Practice - Labels and Selectors",
+  "title": "Base Practice - Labels and Selectors",
   "description": "Fix labels and selectors so a Service can route traffic to the correct Pod",
   "difficulty": "beginner",
   "time": "15 minutes",
