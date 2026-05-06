@@ -1,5 +1,5 @@
 {
-  "title": "CKA Practice - Namespace Basics",
+  "title": "BASE Practice - Namespace Basics",
   "description": "Create and use Kubernetes namespaces to isolate resources",
   "difficulty": "beginner",
   "time": "15 minutes",
