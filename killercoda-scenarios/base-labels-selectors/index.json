@@ -1,0 +1,25 @@
+{
+  "title": "CKA Practice - Labels and Selectors",
+  "description": "Fix labels and selectors so a Service can route traffic to the correct Pod",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Fix Service selector and Pod labels",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
